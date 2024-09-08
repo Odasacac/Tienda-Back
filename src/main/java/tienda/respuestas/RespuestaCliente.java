@@ -7,7 +7,7 @@ import tienda.modelos.ModeloCliente;
 
 
 
-public class RepuestaCliente 
+public class RespuestaCliente 
 {
 	private String respuesta;
 	private List <ModeloCliente> clientes;

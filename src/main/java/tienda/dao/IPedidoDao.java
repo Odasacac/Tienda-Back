@@ -6,7 +6,7 @@ import tienda.modelos.ModeloPedido;
 
 
 
-public interface IPedidosDao extends CrudRepository <ModeloPedido, Long>
+public interface IPedidoDao extends CrudRepository <ModeloPedido, Long>
 {
 
 }

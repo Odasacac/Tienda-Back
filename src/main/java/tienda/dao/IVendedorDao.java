@@ -2,10 +2,10 @@ package tienda.dao;
 
 import org.springframework.data.repository.CrudRepository;
 
-import tienda.modelos.ModeloCliente;
+import tienda.modelos.ModeloVendedor;
 
 
-public interface IVendedorDao extends CrudRepository <ModeloCliente, Long>
+public interface IVendedorDao extends CrudRepository <ModeloVendedor, Long>
 {
 
 }

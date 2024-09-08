@@ -6,7 +6,7 @@ import tienda.modelos.ModeloArticulo;
 
 
 
-public interface IArticulosDao extends CrudRepository <ModeloArticulo, Long>
+public interface IArticuloDao extends CrudRepository <ModeloArticulo, Long>
 {
 
 }
