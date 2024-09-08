@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="articulos")
-public class ModeloArticulos implements Serializable
+public class ModeloArticulo implements Serializable
 {
 
 	private static final long serialVersionUID = 2697102979195650264L;
@@ -34,7 +34,7 @@ public class ModeloArticulos implements Serializable
 	private String descripcionArticulo;
 	
 	@ManyToMany
-	private List <ModeloPedidos> pedidosArticulo= new ArrayList <>();
+	private List <ModeloPedido> pedidosArticulo= new ArrayList <>();
 	
 	@ManyToOne
 	@JoinColumn(name = "almacenId")
@@ -103,11 +103,11 @@ public class ModeloArticulos implements Serializable
 		this.descripcionArticulo = descripcionArticulo;
 	}
 
-	public List<ModeloPedidos> getPedidosArticulo() {
+	public List<ModeloPedido> getPedidosArticulo() {
 		return pedidosArticulo;
 	}
 
-	public void setPedidosArticulo(List<ModeloPedidos> pedidosArticulo) {
+	public void setPedidosArticulo(List<ModeloPedido> pedidosArticulo) {
 		this.pedidosArticulo = pedidosArticulo;
 	}
 

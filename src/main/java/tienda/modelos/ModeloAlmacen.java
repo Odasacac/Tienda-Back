@@ -25,7 +25,7 @@ public class ModeloAlmacen implements Serializable
 	private String nombre;
 	
 	@OneToMany(mappedBy = "almacenArticulo")
-	private List <ModeloArticulos> articulosEnAlmacen = new ArrayList <>();
+	private List <ModeloArticulo> articulosEnAlmacen = new ArrayList <>();
 	
 	
 	
@@ -58,11 +58,11 @@ public class ModeloAlmacen implements Serializable
 		this.nombre = nombre;
 	}
 
-	public List<ModeloArticulos> getArticulosEnAlmacen() {
+	public List<ModeloArticulo> getArticulosEnAlmacen() {
 		return articulosEnAlmacen;
 	}
 
-	public void setArticulosEnAlmacen(List<ModeloArticulos> articulosEnAlmacen) {
+	public void setArticulosEnAlmacen(List<ModeloArticulo> articulosEnAlmacen) {
 		this.articulosEnAlmacen = articulosEnAlmacen;
 	}
 	

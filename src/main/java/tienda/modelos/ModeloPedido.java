@@ -12,12 +12,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="pedidos")
-public class ModeloPedidos implements Serializable
+public class ModeloPedido implements Serializable
 {
 	private static final long serialVersionUID = 5714290238688162890L;
 
@@ -39,7 +38,7 @@ public class ModeloPedidos implements Serializable
 	private ModeloVendedor vendedorDelPedido;
 	
 	@ManyToMany(mappedBy = "pedidosArticulo")
-	private List <ModeloArticulos> articulosPedido= new ArrayList <>();
+	private List <ModeloArticulo> articulosPedido= new ArrayList <>();
 	
 	private boolean aDomicilio;
 	
@@ -98,11 +97,11 @@ public class ModeloPedidos implements Serializable
 		this.vendedorDelPedido = vendedorDelPedido;
 	}
 
-	public List<ModeloArticulos> getArticulosPedido() {
+	public List<ModeloArticulo> getArticulosPedido() {
 		return articulosPedido;
 	}
 
-	public void setArticulosPedido(List<ModeloArticulos> articulosPedido) {
+	public void setArticulosPedido(List<ModeloArticulo> articulosPedido) {
 		this.articulosPedido = articulosPedido;
 	}
 

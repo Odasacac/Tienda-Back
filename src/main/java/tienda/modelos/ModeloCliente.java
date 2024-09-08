@@ -35,7 +35,7 @@ public class ModeloCliente implements Serializable
 	private LocalDateTime fechaCreacion;
 	
 	@OneToMany(mappedBy = "clienteDelPedido")
-	private List <ModeloPedidos> pedidosCliente= new ArrayList <>();
+	private List <ModeloPedido> pedidosCliente= new ArrayList <>();
 	
 	
 	
@@ -118,11 +118,11 @@ public class ModeloCliente implements Serializable
 		this.fechaCreacion = fechaCreacion;
 	}
 
-	public List<ModeloPedidos> getPedidosCliente() {
+	public List<ModeloPedido> getPedidosCliente() {
 		return pedidosCliente;
 	}
 
-	public void setPedidosCliente(List<ModeloPedidos> pedidosCliente) {
+	public void setPedidosCliente(List<ModeloPedido> pedidosCliente) {
 		this.pedidosCliente = pedidosCliente;
 	}
 	

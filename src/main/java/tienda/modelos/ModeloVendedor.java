@@ -34,7 +34,7 @@ public class ModeloVendedor implements Serializable
 	private boolean esAdmin;
 	
 	@OneToMany(mappedBy = "vendedorDelPedido")
-	private List <ModeloPedidos> pedidosVendedor= new ArrayList <>();
+	private List <ModeloPedido> pedidosVendedor= new ArrayList <>();
 	
 	
 	
@@ -123,11 +123,11 @@ public class ModeloVendedor implements Serializable
 		this.esAdmin = esAdmin;
 	}
 
-	public List<ModeloPedidos> getPedidosVendedor() {
+	public List<ModeloPedido> getPedidosVendedor() {
 		return pedidosVendedor;
 	}
 
-	public void setPedidosVendedor(List<ModeloPedidos> pedidosVendedor) {
+	public void setPedidosVendedor(List<ModeloPedido> pedidosVendedor) {
 		this.pedidosVendedor = pedidosVendedor;
 	}
 	
